@@ -1,0 +1,55 @@
+package projecthike;
+
+import java.util.Scanner;
+
+/**
+ *
+ * @author Declan
+ */
+public class ProjectHIKE {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+        //keywords:
+        String HELP;
+        //tasks
+        String[] task = {};
+        String[] taskComplete = {};
+        //call this string to view user commands commands
+        String[] helpDesk = {};
+        // code starts asking user if they have previous data saved
+        System.out.println("Hi there, Welcome to Tackle!");
+        System.out.println("New user? (y/n): ");
+        String startInput = in.nextLine();
+        //if the user is new, execute the "new" code, if they are returning, 
+        //load their data and give them the option menu
+        if (startInput.equals("y"))
+        {
+        System.out.println("Let's get started, what's your name?: ");
+        String userName = in.nextLine();
+        System.out.println("So your name is " + userName + "? Got it!" );
+        System.out.println("Tackle let's you keep track of what you have to do");
+        System.out.println("and helps you stay motivated!");
+        System.out.println("If you ever need help, simply type 'help'!");
+        System.out.println("Why don't you try it now?: ");
+        String command = in.nextLine();
+        if(command.equals("help"))
+        {
+        System.out.println("Great, this is how you will access the help menu");
+        }
+        else
+        {
+        System.out.println("Want to skip the help tuotorial? No problem, let's start tasking!");
+        }
+        System.out.println("To get started, let me know what task you are looking to add to your list: ");
+        String task1 = in.nextLine();
+        //may need to look for words to fix contextual issues with this sentence
+        
+        else 
+        {
+         //reserved for if 'n' is chosen at startup   
+        }
+                
